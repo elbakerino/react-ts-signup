@@ -34,6 +34,9 @@ const validate = (
     if (street.trim().length < 4) {
         errors = errors.push(['Street must be minimum 4 characters long']);
     }
+    if (streetNo.trim().length < 1) {
+        errors = errors.push(['Street No must be filled out']);
+    }
     if (city.trim().length < 4) {
         errors = errors.push(['City must be minimum 4 characters long']);
     }
